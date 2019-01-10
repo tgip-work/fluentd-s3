@@ -6,6 +6,4 @@ FROM gcr.io/google-containers/fluentd-elasticsearch:v2.3.2
 
 RUN sudo gem install \
         fluent-plugin-s3 -v 1.1.7 \
- && sudo gem sources --clear-all \
- && rm -rf /var/lib/apt/lists/* \
-           /home/fluent/.gem/ruby/2.3.0/cache/*.gem
+ && sudo gem sources --clear-all
